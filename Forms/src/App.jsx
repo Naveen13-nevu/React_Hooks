@@ -30,6 +30,7 @@ function Form() {
         </div>
       ) : (
         <form onSubmit={handleSubmit}>
+
           <div style={{ marginBottom: "15px" }}>
             <label>Name:</label><br />
             <input
@@ -69,10 +70,33 @@ function Form() {
             />
           </div>
 
-          <button type="submit"
-            style={{ width: "100%", padding: "10px", background: "blue", color: "white" }}>
+          <div style={{ marginBottom: "15px" }}>
+            <label>Phone:</label><br />
+            <input
+              type="tel"
+              name="phone"
+              value={formData.phone || ""}
+              onChange={handleChange}
+              placeholder="Enter your phone number"
+              style={{ width: "100%", padding: "8px" }}
+            />
+          </div>
+
+          <button
+            type="submit"
+            style={{
+              width: "100%",
+              padding: "10px",
+              background: "blue",
+              color: "white",
+              fontSize: "16px",
+              border: "none",
+              borderRadius: "5px",
+              cursor: "pointer"
+            }}>
             Submit
           </button>
+
         </form>
       )}
     </div>
