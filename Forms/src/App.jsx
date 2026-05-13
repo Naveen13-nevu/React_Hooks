@@ -28,7 +28,8 @@ function Form() {
           <p>Name: {formData.name}</p>
           <p>Email: {formData.email}</p>
         </div>
-      ) : (
+      ) : 
+      (
         <form onSubmit={handleSubmit}>
 
           <div style={{ marginBottom: "15px" }}>
