@@ -6,7 +6,7 @@ function App() {
     name: "",
     email: "",
     password: ""
-  });
+  }); 
 
   const handleChange = (e) => {
     setFormData({
